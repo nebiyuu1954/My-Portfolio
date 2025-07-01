@@ -1,5 +1,6 @@
 import Header from './components/header/Header'
 import Aboutme from './components/aboutme/Aboutme'
+import Skills from './components/skills/Skills'
 
 function App() {
 
@@ -7,7 +8,8 @@ function App() {
     <div>
       <Header></Header>
       <Aboutme></Aboutme>
-      <Aboutme></Aboutme>
+      <Skills></Skills>
+
     </div>
   )
 }
