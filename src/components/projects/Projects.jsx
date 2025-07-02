@@ -27,6 +27,7 @@ const Projects = () => {
         'Designed and Developed intuitive Responsive UI with React ',
         'Implemented Interactive Skills Slider',
         'Integrated and Managed Assets',
+        'used formik and yup for validation used Email Js for submition',
         'Deployed to Vercel',
       ]
     }
