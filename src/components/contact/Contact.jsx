@@ -30,7 +30,7 @@ const Contact = () => {
             </p>
             <div className="contact-buttons">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/nebiyuu1954"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-button github-button"
@@ -52,7 +52,7 @@ const Contact = () => {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/nebiyu-esaiyas-b5769b312/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-button linkedin-button"
