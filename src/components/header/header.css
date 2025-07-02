@@ -3,9 +3,9 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(22, 22, 22, 0.8); /* Semi-transparent dark for blur visibility */
-  backdrop-filter: blur(12px); /* Increased blur for effect */
-  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  background-color: rgba(22, 22, 22, 0.8);
+  backdrop-filter: blur(12px); 
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid #e5e5e5;
   z-index: 1000;
   box-sizing: border-box;
@@ -13,7 +13,7 @@ header {
 }
 
 .header-container {
-  max-width: 1350px; /* Matches landing, skills, footer */
+  max-width: 1350px; 
   margin: 0 auto;
   padding: 24px 16px;
   display: flex;
@@ -33,17 +33,7 @@ nav {
   gap: 30px;
 }
 
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: clamp(14px, 1.8vw + 0.8rem, 24px);
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
 
-nav a:hover {
-  color: #106919; /* Matches landing, skills, footer */
-}
 
 @media (max-width: 768px) {
   .header-container {
