@@ -1,22 +1,23 @@
 .skills-section {
-  padding: 100px 0 120px;
-  background-color: #ffffff;
+  padding: 100px 0 0px;
+  background-color: #161616;
   overflow-x: hidden;
 }
 
 .skills-container {
   max-width: 1350px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 50px;
   box-sizing: border-box;
 }
 
 .skills-title {
   font-size: 60px;
   font-weight: 800;
-  color: #222222;
+  color: #106919;
   margin: 0 0 40px;
   text-align: center;
+  animation: glow 2s ease-in-out infinite;
 }
 
 .skills-content {
@@ -24,7 +25,7 @@
   gap: 40px;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .skill-category {
@@ -33,7 +34,7 @@
   background-color: #f9f9f9;
   padding: 24px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(34, 34, 34);
   border: 2px solid transparent;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   margin-bottom: 1rem;
@@ -41,7 +42,7 @@
 
 .skill-category:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgb(34, 34, 34);
   border-color: #106919;
 }
 
@@ -97,19 +98,19 @@
   top: -80px;
   left: 95%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 8px;
   padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out; 
-  max-height: 150px; 
-  overflow: hidden; 
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  max-height: 150px;
+  overflow: hidden;
   z-index: 10;
   min-width: 100px;
   text-align: center;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .skill-container:hover .skill-popup {
@@ -129,15 +130,14 @@
 }
 
 .skills-slider {
-  overflow: hidden;
   width: 100%;
-  background-color: #f9f9f9;
-  padding: 16px 0;
+  background-color: #161616;
+  padding: 0px 0px;
 }
 
 .slider-track {
   display: inline-flex;
-  gap: 24px;
+  gap: 25px;
   animation: scroll 30s linear infinite;
   white-space: nowrap;
   will-change: transform;
@@ -153,11 +153,35 @@
   border-radius: 8px;
   border: 1px solid #e5e5e5;
   transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-bottom: 25px;
 }
 
 .slider-skill:hover {
   background-color: #106919;
   transform: scale(1.1);
+}
+
+.letter {
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+  animation: glow 2s ease-in-out infinite;
+}
+
+.letter:hover {
+  color: #f8f8f8;
+  transform: scale(1.1);
+}
+
+@keyframes glow {
+  0%, 100% {
+    color: #222222;
+  }
+  25% {
+    color: #1e7213;
+  }
+  50% {
+    color: #106919;
+  }
 }
 
 @media (max-width: 768px) {

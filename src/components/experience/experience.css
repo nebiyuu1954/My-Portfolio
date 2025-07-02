@@ -1,0 +1,360 @@
+.experience-section {
+  padding: 100px 0 120px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.experience-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+.experience-title {
+  font-size: 60px;
+  font-weight: 800;
+  color: #222222;
+  margin: 0 0 40px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 3px;
+  justify-content: center;
+}
+
+.experience-title .letter {
+  display: inline-block;
+  animation: wave 5s infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    color: #222222;
+    transform: scale(1);
+  }
+  25% {
+    color: #1e7213;
+    transform: scale(1.05);
+  }
+  50% {
+    color: #106919;
+    transform: scale(1.05);
+  }
+}
+
+.experience-card-wrapper {
+  position: relative;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.experience-card {
+  background-color: #f9f9f9;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-color: #106919;
+}
+
+.experience-card.humorous {
+  background-color: #fff7e6;
+  border-color: #ff5733;
+  box-shadow: 0 4px 12px rgba(255, 87, 51, 0.2);
+}
+
+.experience-card.humorous:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(255, 87, 51, 0.3);
+  border-color: #106919;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.experience-left {
+  text-align: left;
+}
+
+.experience-right {
+  text-align: right;
+}
+
+.experience-role {
+  font-size: 24px;
+  font-weight: 600;
+  color: #106919;
+  margin: 0;
+}
+
+.experience-card.humorous .experience-role {
+  color: #ff5733;
+}
+
+.experience-company {
+  font-size: 18px;
+  color: #333333;
+  margin: 4px 0 0;
+}
+
+.experience-year {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.experience-location {
+  font-size: 16px;
+  color: #666666;
+  margin: 4px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.calendar-icon,
+.location-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 5px;
+}
+
+.calendar-icon svg,
+.location-icon svg {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+
+.experience-responsibilities {
+  margin: 0;
+  padding: 0 5px;
+  font-size: 16px;
+  color: #333333;
+  list-style: none;
+}
+
+.experience-responsibilities:not(.many-items) {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-responsibilities.many-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7px 100px;
+}
+
+.experience-responsibilities li:hover {
+  color: #106919;
+}
+
+.experience-responsibilities li:hover::before {
+  color: #106919;
+}
+
+.experience-responsibilities li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.experience-responsibilities li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #106919;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.experience-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.nav-button {
+  background-color: #ffffff;
+  color: #106919;
+  border: 2px solid #106919;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #106919;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.nav-button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  border-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.progress-indicator {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+}
+
+.experience-card-wrapper.slide-in-right {
+  animation: slideInRight 0.3s ease forwards;
+}
+
+.experience-card-wrapper.slide-out-left {
+  animation: slideOutLeft 0.3s ease forwards;
+}
+
+.experience-card-wrapper.slide-in-left {
+  animation: slideInLeft 0.3s ease forwards;
+}
+
+.experience-card-wrapper.slide-out-right {
+  animation: slideOutRight 0.3s ease forwards;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 150px 0 100px;
+  }
+
+  .experience-container {
+    padding: 0 25px;
+  }
+
+  .experience-title {
+    font-size: 36px;
+  }
+
+  .experience-card {
+    padding: 35px;
+  }
+
+  .experience-role {
+    font-size: 20px;
+  }
+
+  .experience-company {
+    font-size: 16px;
+  }
+
+  .experience-year {
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .experience-location {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .calendar-icon,
+  .location-icon {
+    margin-top: 1px;
+    margin-right: 1px;
+  }
+
+  .calendar-icon svg,
+  .location-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .experience-responsibilities {
+    font-size: 14px;
+    padding: 0 15px;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .experience-responsibilities li {
+    margin-bottom: 6px;
+  }
+
+  .experience-responsibilities,
+  .experience-responsibilities.many-items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .nav-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .progress-indicator {
+    font-size: 14px;
+  }
+}

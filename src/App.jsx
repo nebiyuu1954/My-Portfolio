@@ -1,14 +1,16 @@
 import Header from './components/header/Header'
-import Aboutme from './components/aboutme/Aboutme'
+import LandingPage from './components/landingpage/LandingPage'
 import Skills from './components/skills/Skills'
+import Experience from './components/experience/Experience'
 
 function App() {
 
   return (
     <div>
+      <LandingPage></LandingPage>
       <Header></Header>
-      <Aboutme></Aboutme>
       <Skills></Skills>
+      <Experience></Experience>
 
     </div>
   )

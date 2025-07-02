@@ -1,0 +1,211 @@
+.landing-section {
+  padding: 20px 0;
+  background-image: url('./background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.landing-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.landing-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.landing-text {
+  text-align: center;
+}
+
+.landing-name {
+  font-size: clamp(36px, 5vw + 1rem, 70px);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 12px;
+  animation: glow 2s ease-in-out infinite;
+}
+
+.landing-title {
+  font-size: clamp(24px, 3vw + 1rem, 37px);
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 24px;
+  transition: color 0.2s ease;
+}
+
+.landing-title:hover {
+  color: #106919;
+}
+
+.letter {
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+  animation: glow 2s ease-in-out infinite;
+}
+
+.letter:hover {
+  color: #106919;
+  transform: scale(1.1);
+}
+
+@keyframes glow {
+  0%, 100% {
+    color: #222222;
+  }
+  25% {
+    color: #1e7213;
+  }
+  50% {
+    color: #106919;
+  }
+}
+
+.word {
+  transition: color 0.2s ease;
+  display: inline-block;
+}
+
+.word:hover {
+  color: #106919;
+}
+
+.landing-message {
+  font-size: clamp(16px, 1.5vw + 0.8rem, 18px);
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0 0 32px;
+  max-width: 800px;
+}
+
+.landing-buttons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #106919;
+  color: #ffffff;
+}
+
+.btn-primary::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.5c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6a2 2 0 0 0-2 2c0 1.1.9 2 2 2s2-.9 2-2-1.79-2-2-2z"></path></svg>');
+  background-size: cover;
+}
+
+.btn-primary:hover {
+  background-color: #0e5714;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #106919;
+  border: 2px solid #106919;
+}
+
+.btn-secondary::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>');
+  background-size: cover;
+}
+
+.btn-secondary:hover {
+  background-color: #106919;
+  color: #ffffff;
+}
+
+.btn-secondary:hover::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>');
+}
+
+@media (max-width: 768px) {
+  .landing-section {
+    padding: 80px 0;
+  }
+
+  .landing-container {
+    padding: 0 16px;
+  }
+
+  .landing-content {
+    gap: 32px;
+  }
+
+  .landing-name {
+    font-size: clamp(30px, 5vw + 0.8rem, 50px);
+  }
+
+  .landing-title {
+    font-size: clamp(20px, 3vw + 0.8rem, 24px);
+  }
+
+  .landing-message {
+    font-size: clamp(14px, 1.5vw + 0.6rem, 16px);
+    max-width: 100%;
+  }
+
+  .landing-buttons {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .btn {
+    width: 90%;
+    text-align: center;
+    padding: 14px 24px;
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  .btn-primary::before, .btn-secondary::before {
+    width: 18px;
+    height: 18px;
+  }
+}

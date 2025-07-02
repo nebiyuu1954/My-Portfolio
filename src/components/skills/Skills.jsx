@@ -5,7 +5,7 @@ import css3Icon from '../../assets/logos/css3.svg';
 import javascriptIcon from '../../assets/logos/javascript.svg';
 import responsiveDesignIcon from '../../assets/logos/responsivedesign.svg';
 import tailwindcssIcon from '../../assets/logos/tailwindcss.svg';
-import uxuiDesignIcon from '../../assets/logos/react.svg'; //again
+import uxuiDesignIcon from '../../assets/logos/react.svg';
 import reactIcon from '../../assets/logos/react.svg';
 import pythonIcon from '../../assets/logos/python.svg';
 import djangoIcon from '../../assets/logos/django.svg';
@@ -14,10 +14,10 @@ import mongodbIcon from '../../assets/logos/mongodb.svg';
 import postgresqlIcon from '../../assets/logos/postgresql.svg';
 import sqlIcon from '../../assets/logos/mysql.svg';
 import djangoRestFrameworkIcon from '../../assets/logos/drf.svg';
-import visualstudiocodeIcon from '../../assets/logos/visualstudiocode.svg'
+import visualstudiocodeIcon from '../../assets/logos/visualstudiocode.svg';
 import gitIcon from '../../assets/logos/git.svg';
 import githubIcon from '../../assets/logos/github.svg';
-import mongodbCompassIcon from '../../assets/logos/vite.svg'; //again
+import mongodbCompassIcon from '../../assets/logos/vite.svg';
 import viteIcon from '../../assets/logos/vite.svg';
 import figmaIcon from '../../assets/logos/figma.svg';
 import postmanIcon from '../../assets/logos/postman.svg';
@@ -62,9 +62,7 @@ const Skills = () => {
     { name: 'JavaScript', icon: javascriptIcon },
     { name: 'Responsive Design', icon: responsiveDesignIcon },
     { name: 'Tailwind CSS', icon: tailwindcssIcon },
-    // { name: 'UX/UI Design', icon: uxuiDesignIcon },  //again
     { name: 'Python', icon: pythonIcon },
-    // { name: 'REST APIs', icon: restApisIcon },
     { name: 'MongoDB', icon: mongodbIcon },
     { name: 'Insomnia', icon: insomniaIcon },
     { name: 'PostgreSQL', icon: postgresqlIcon },
@@ -73,7 +71,6 @@ const Skills = () => {
     { name: 'Django REST Framework', icon: djangoRestFrameworkIcon },
     { name: 'VS Code', icon: visualstudiocodeIcon },
     { name: 'Git', icon: gitIcon },
-    // { name: 'MongoDB Compass', icon: mongodbCompassIcon }, //again
     { name: 'Vite', icon: viteIcon },
     { name: 'Figma', icon: figmaIcon },
     { name: 'Django', icon: djangoIcon },
@@ -81,11 +78,17 @@ const Skills = () => {
     { name: 'React', icon: reactIcon }
   ];
 
+  const title = "Skills";
+  const titleLetters = title.split('').map((letter, index) => (
+    <span key={`title-${index}`} className="letter" style={{ animationDelay: `${index * 0.2}s` }}>
+      {letter === ' ' ? '\u00A0' : letter}
+    </span>
+  ));
 
   return (
     <section id="skills" className="skills-section">
       <div className="skills-container">
-        <h2 className="skills-title">My Skills</h2>
+        <h2 className="skills-title">{titleLetters}</h2>
         <div className="skills-content">
           <SkillCategory title="Front End" skills={frontEndSkills} />
           <SkillCategory title="Back End" skills={backEndSkills} />
