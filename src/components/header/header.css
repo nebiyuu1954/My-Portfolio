@@ -33,7 +33,17 @@ nav {
   gap: 30px;
 }
 
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: clamp(14px, 1.8vw + 0.8rem, 24px);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
 
+nav a:hover {
+  color: #106919; /* Matches landing, skills, footer */
+}
 
 @media (max-width: 768px) {
   .header-container {
