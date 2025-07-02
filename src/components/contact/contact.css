@@ -1,0 +1,272 @@
+.contact-section {
+  padding: 100px 0 120px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.contact-container {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+.contact-title {
+  font-size: 60px;
+  font-weight: 800;
+  color: #222222;
+  margin: 0 0 40px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  letter-spacing: 3px;
+  justify-content: center;
+}
+
+.contact-title .letter {
+  display: inline-block;
+  animation: wave 5s infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    color: #222222;
+    transform: scale(1);
+  }
+  25% {
+    color: #1e7213;
+    transform: scale(1.05);
+  }
+  50% {
+    color: #106919;
+    transform: scale(1.05);
+  }
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.contact-left, .contact-right {
+  flex: 1;
+}
+
+.contact-heading {
+  font-size: 30px;
+  font-weight: 600;
+  color: #106919;
+  margin: 0 0 16px;
+  text-align: left;
+}
+
+.contact-message {
+  font-size: 16px;
+  color: #333333;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: 200;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.github-button {
+  background-color: #ffffff;
+  color: #106919;
+  border: 2px solid #106919;
+}
+
+.github-button:hover {
+  background-color: #106919;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.linkedin-button {
+  background-color: #ffffff;
+  color: #106919;
+  border: 2px solid #106919;
+}
+
+.linkedin-button:hover {
+  background-color: #106919;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-group {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 14px;
+  color: #333333;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #106919;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.submit-button {
+  background-color: #106919;
+  color: #ffffff;
+  border: 2px solid #106919;
+  padding: 8px 10px;
+  font-size: 15px;
+  font-weight: 200;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  justify-content: center;
+  margin-left: 190px;
+  margin-right: 190px;
+  /* Customize Submit button:
+     - Change text: Update "Submit Message" in Contact.jsx <button> text.
+     - Change background color: Modify background-color (e.g., #0e5714 for darker green).
+     - Change text color: Modify color (e.g., #f0f0f0 for lighter white).
+     - Change size: Adjust padding (e.g., 10px 20px) or font-size (e.g., 14px).
+     - Change hover effect: Modify background-color in .submit-button:hover (e.g., #1e7213).
+     - Example: For larger, red button with blue hover:
+       background-color: #ff0000;
+       color: #ffffff;
+       padding: 10px 20px;
+       font-size: 14px;
+       .submit-button:hover { background-color: #0000ff; }
+  */
+}
+
+.submit-button:hover {
+  background-color: #0e5714;
+  transform: scale(1.05);
+}
+
+.button-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
+.button-icon svg {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 150px 0 100px;
+  }
+
+  .contact-container {
+    padding: 0 25px;
+  }
+
+  .contact-title {
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-heading {
+    font-size: 20px;
+  }
+
+  .contact-message {
+    font-size: 14px;
+  }
+
+  .contact-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .contact-button {
+    width: 30%;
+    text-align: center;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .button-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .name-group {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .error-message {
+    font-size: 10px;
+  }
+
+  .submit-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
