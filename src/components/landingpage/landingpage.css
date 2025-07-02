@@ -8,8 +8,9 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
+  position: relative;  
+  width: 100%; 
+  margin: 0; 
 }
 
 .landing-section::before {
@@ -141,7 +142,7 @@
 }
 
 .btn-secondary {
-  background-color: #ffffff;
+  background-color: #161616;
   color: #106919;
   border: 2px solid #106919;
 }

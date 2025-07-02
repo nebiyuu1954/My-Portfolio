@@ -5,21 +5,16 @@ import './experience.css';
 const Experience = () => {
   const experiences = [
     {
-      role: 'Full Stack Web Developer',
-      company: 'Tech Innovate Solutions',
-      year: '2023 - Present',
+      role: 'Python Django Developer (Internship)',
+      company: 'Conquer Agency',
+      year: '04/2024 - 06/2024',
       location: 'Remote',
       responsibilities: [
-        'Developed and maintained web applications using React and Django.',
-        'Designed RESTful APIs to support front-end functionality.',
-        'Optimized database queries for MongoDB and PostgreSQL.',
-        'Collaborated with UX/UI designers to enhance user experience.',
-        'Implemented responsive designs for cross-device compatibility.',
-        'Designed RESTful APIs to support front-end functionality.',
-        'Optimized database queries for MongoDB and PostgreSQL.',
-        'Collaborated with UX/UI designers to enhance user experience.',
-        'Implemented responsive designs for cross-device compatibility.',
-        'Implemented responsive designs for cross-device compatibility.'
+        'Collaborated to build Tigat website Telegrams community features like Group management and Bot payment using Django',
+        'Implemented payment integration with Chapas API',
+        'Web Scrapping using libraries such as Beautiful Soup lxml for data extraction and analysis',
+        'Tested python and telgram clases',
+        'Implemented webhooks for payment notification',
       ]
     },
     {

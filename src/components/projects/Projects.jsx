@@ -5,29 +5,29 @@ import './projects.css';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      techStack: ['React', 'Django', 'PostgreSQL', 'Tailwind CSS'],
+      title: 'Telegram Bot Developer (Django) ',
+      techStack: ['Django', 'Python','Mongo DB', 'Chapa Api', 'Telegram Api'],
       githubLink: 'https://github.com/yourusername/ecommerce',
       liveDemoLink: 'https://ecommerce-demo.com',
       documentationLink: 'https://github.com/yourusername/ecommerce/blob/main/README.md',
       description: [
-        'Built a full-stack e-commerce platform with user authentication.',
-        'Implemented product filtering and cart functionality.',
-        'Designed responsive UI with Tailwind CSS.',
-        'Integrated Stripe for payments.'
+        'Implemented a Telegram Group Bot for Tigat website using Django that has group restrictions and rules for keeping Community Guidelines',
+        `Implemented a Telegram Bot for Tigat website using Django that has payment integration with Chapa's Api for Community payment`,
+        'Implemented Web app in telegram for the user fetching html/css/js from our django server for succesful payement interface',
+        'Implemented the test clases for the classes'
       ]
     },
     {
-      title: 'Task Manager App',
-      techStack: ['React', 'MongoDB', 'Express', 'Node.js'],
-      githubLink: 'https://github.com/yourusername/taskmanager',
+      title: 'Personal Portfolio Website',
+      techStack: ['React', 'Vite', 'Javascript','Html','Css'],
+      githubLink: 'https://github.com/nebiyuu1954/My-Portfolio',
       liveDemoLink: 'https://taskmanager-demo.com',
       documentationLink: 'https://github.com/yourusername/taskmanager/blob/main/docs.md',
       description: [
-        'Developed a task management app with CRUD operations.',
-        'Used MongoDB for data storage.',
-        'Implemented RESTful APIs with Express.',
-        'Created intuitive UI with React.'
+        'Designed and Developed intuitive Responsive UI with React ',
+        'Implemented Interactive Skills Slider',
+        'Integrated and Managed Assets',
+        'Deployed to Vercel',
       ]
     }
   ];
@@ -73,13 +73,13 @@ const Projects = () => {
           <ProjectCard key={currentIndex} {...projects[currentIndex]} />
         </div>
         <div className="project-navigation">
-          <button className="nav-button" onClick={handlePrevious}>
+          <button className="pnav-button" onClick={handlePrevious}>
             Previous
           </button>
-          <span className="progress-indicator">
+          <span className="pprogress-indicator">
             {currentIndex + 1} of {projects.length}
           </span>
-          <button className="nav-button" onClick={handleNext}>
+          <button className="pnav-button" onClick={handleNext}>
             Next
           </button>
         </div>

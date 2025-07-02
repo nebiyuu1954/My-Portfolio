@@ -6,9 +6,6 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* Centers content vertically and horizontally, sets padding and background */
-  /* Adjust padding: e.g., 160px 0 for more vertical space */
-  /* Adjust min-height: e.g., 80vh for less vertical centering */
 }
 
 .about-container {
@@ -16,8 +13,6 @@
   margin: 0 auto;
   padding: 0 24px;
   box-sizing: border-box;
-  /* Centers content with max-width and padding */
-  /* Adjust padding: e.g., 0 30px for wider sides */
 }
 
 .about-content {
@@ -27,9 +22,6 @@
   align-items: left;
   gap: 50px;
   flex-wrap: wrap;
-  /* Centers image and text horizontally and vertically, allows wrapping */
-  /* Adjust gap: e.g., 60px for more space, 40px for less */
-  /* Adjust flex-direction: e.g., column for vertical stacking on desktop */
 }
 
 .profile-photo-container {
@@ -37,9 +29,6 @@
   width: clamp(200px, 20vw + 100px, 350px);
   height: clamp(200px, 20vw + 100px, 350px);
   flex-shrink: 0;
-  /* Scalable image container size */
-  /* clamp(min, preferred, max): min 200px, preferred 20vw + 100px (~250px at 769px, ~300px at 1200px), max 350px */
-  /* Adjust min (e.g., 180px), preferred (e.g., 18vw + 100px for slower scaling), max (e.g., 400px) */
 }
 
 .profile-photo, .profile-photo-hover {
@@ -53,43 +42,31 @@
   top: 0;
   left: 0;
   transition: opacity 0.5s ease, transform 0.5s ease;
-  /* Scalable image size with circular shape, border, and shadow */
-  /* Adjust clamp values to match .profile-photo-container */
-  /* Adjust border: e.g., 6px for thicker, shadow: e.g., 0 8px 16px for stronger */
 }
 
 .profile-photo {
   opacity: 1;
-  /* Default image visible */
 }
 
 .profile-photo-hover {
   opacity: 0;
   transform: rotate(0deg);
-  /* Hover image hidden, no rotation */
 }
 
 .profile-photo-container:hover .profile-photo {
   opacity: 0;
   transform: rotate(360deg);
-  /* Fade out and rotate on hover */
-  /* Adjust rotation: e.g., 180deg for half-spin */
 }
 
 .profile-photo-container:hover .profile-photo-hover {
   opacity: 1;
   transform: rotate(360deg);
-  /* Fade in and rotate on hover */
-  /* Adjust rotation: e.g., 180deg */
 }
 
 .about-text {
   flex: 1;
   min-width: 400px;
   text-align: left;
-  /* Centers text (name, title, message) */
-  /* Adjust min-width: e.g., 300px for smaller screens */
-  /* Adjust text-align: e.g., left for left-aligned text */
 }
 
 .about-name {
@@ -97,9 +74,6 @@
   font-weight: 800;
   color: #222222;
   margin: 0 0 12px;
-  /* Scalable name text, centered */
-  /* clamp(min, preferred, max): min 36px, preferred 5vw + 1rem (~46px at 769px, ~60px at 1200px), max 70px */
-  /* Adjust min (e.g., 30px), preferred (e.g., 4vw + 1rem for slower scaling), max (e.g., 80px) */
 }
 
 .about-title {
@@ -108,42 +82,29 @@
   color: #106919;
   margin: 0 0 24px;
   transition: color 0.2s ease;
-  /* Scalable title text, centered, with hover color change */
-  /* clamp(min, preferred, max): min 24px, preferred 3vw + 1rem (~30px at 769px, ~34px at 1200px), max 37px */
-  /* Adjust min (e.g., 20px), preferred (e.g., 2.5vw + 1rem), max (e.g., 40px) */
 }
 
 .about-title:hover {
   color: #ffffff;
-  /* Hover color for title */
-  /* Adjust color: e.g., #0e5714 */
 }
 
 .letter {
   transition: color 0.2s ease, transform 0.2s ease;
   display: inline-block;
-  /* Individual letter effects for name/title */
-  /* Adjust transition duration: e.g., 0.3s */
 }
 
 .letter:hover {
   color: #106919;
   transform: scale(1.1);
-  /* Letter hover effect */
-  /* Adjust color: e.g., #ff5733, scale: e.g., 1.2 for larger */
 }
 
 .word {
   transition: color 0.2s ease;
   display: inline-block;
-  /* Word hover effect */
-  /* Adjust transition duration: e.g., 0.3s */
 }
 
 .word:hover {
   color: #106919;
-  /* Word hover color */
-  /* Adjust color: e.g., #ff5733 */
 }
 
 .about-message {
@@ -152,17 +113,12 @@
   line-height: 1.5;
   margin: 0 0 32px;
   max-width: 800px;
-  /* Scalable description text */
-  /* clamp(min, preferred, max): min 16px, preferred 1.5vw + 0.8rem (~17px at 769px, ~18px at 1200px), max 18px */
-  /* Adjust min (e.g., 14px), preferred (e.g., 1.2vw + 0.8rem), max (e.g., 20px) */
 }
 
 .about-buttons {
   display: flex;
   gap: 24px;
   justify-content: left;
-  /* Button container, centered */
-  /* Adjust gap: e.g., 30px for more space */
 }
 
 .btn {
@@ -175,15 +131,11 @@
   text-decoration: none;
   border-radius: 6px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  /* Base button styles */
-  /* Adjust padding: e.g., 20px 40px, font-size: e.g., 20px */
 }
 
 .btn-primary {
   background-color: #106919;
   color: #ffffff;
-  /* Primary button */
-  /* Adjust background: e.g., #0e5714 */
 }
 
 .btn-primary::before {
@@ -193,22 +145,16 @@
   height: 20px;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>');
   background-size: cover;
-  /* Download icon */
-  /* Adjust size: e.g., 24px */
 }
 
 .btn-primary:hover {
   background-color: #0e5714;
-  /* Primary button hover */
-  /* Adjust background: e.g., #0c4b12 */
 }
 
 .btn-secondary {
   background-color: #ffffff;
   color: #106919;
   border: 2px solid #106919;
-  /* Secondary button */
-  /* Adjust border: e.g., 3px solid #106919 */
 }
 
 .btn-secondary::before {
@@ -218,33 +164,25 @@
   height: 20px;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>');
   background-size: cover;
-  /* Email icon */
-  /* Adjust size: e.g., 24px */
 }
 
 .btn-secondary:hover {
   background-color: #106919;
   color: #ffffff;
-  /* Secondary button hover */
-  /* Adjust background: e.g., #0e5714 */
 }
 
 .btn-secondary:hover::before {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>');
-  /* Email icon on hover */
+
 }
 
 @media (max-width: 788px) {
   .about-section {
     padding: 80px 0;
-    /* Mobile section padding */
-    /* Adjust: e.g., 100px 0 for more space */
   }
 
   .about-container {
     padding: 15 15px;
-    /* Mobile container padding */
-    /* Adjust: e.g., 0 20px */
   }
 
   .about-content {
@@ -252,52 +190,34 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* Centers image and text vertically and horizontally */
-    /* Adjust gap: e.g., 40px for more space */
   }
 
   .profile-photo-container {
     width: clamp(160px, 25vw + 80px, 200px);
     height: clamp(160px, 25vw + 80px, 200px);
-    /* Smaller scalable image for mobile */
-    /* clamp: min 160px, preferred 25vw + 80px (~160px at 320px, ~200px at 768px), max 200px */
-    /* Adjust min (e.g., 140px), preferred (e.g., 20vw + 80px), max (e.g., 220px) */
   }
 
   .profile-photo, .profile-photo-hover {
     width: clamp(160px, 25vw + 80px, 200px);
     height: clamp(160px, 25vw + 80px, 200px);
-    /* Match container size */
-    /* Adjust clamp values to match .profile-photo-container */
   }
 
   .about-text {
     min-width: 0;
     text-align: center;
-    /* Centers text on mobile */
-    /* Adjust: e.g., text-align: left for left-aligned text */
   }
 
   .about-name {
     font-size: clamp(30px, 5vw + 0.8rem, 36px);
-    /* Scalable name text for mobile */
-    /* clamp: min 30px, preferred 5vw + 0.8rem (~32px at 320px, ~36px at 768px), max 36px */
-    /* Adjust min (e.g., 28px), preferred (e.g., 4vw + 0.8rem), max (e.g., 40px) */
   }
 
   .about-title {
     font-size: clamp(20px, 3vw + 0.8rem, 24px);
-    /* Scalable title text for mobile */
-    /* clamp: min 20px, preferred 3vw + 0.8rem (~22px at 320px, ~24px at 768px), max 24px */
-    /* Adjust min (e.g., 18px), preferred (e.g., 2.5vw + 0.8rem), max (e.g., 28px) */
   }
 
   .about-message {
     font-size: clamp(14px, 1.5vw + 0.6rem, 16px);
     max-width: 100%;
-    /* Scalable message text for mobile */
-    /* clamp: min 14px, preferred 1.5vw + 0.6rem (~15px at 320px, ~16px at 768px), max 16px */
-    /* Adjust min (e.g., 12px), preferred (e.g., 1.2vw + 0.6rem), max (e.g., 18px) */
   }
 
   .about-buttons {
@@ -305,8 +225,6 @@
     gap: 16px;
     width: 100%;
     justify-content: center;
-    /* Centers buttons vertically and horizontally */
-    /* Adjust gap: e.g., 20px for more space */
   }
 
   .btn {
@@ -315,16 +233,10 @@
     padding: 14px 24px;
     font-size: 16px;
     justify-content: center;
-    /* Mobile button size and layout */
-    /* Adjust width: e.g., 80% for narrower buttons */
-    /* Adjust padding: e.g., 12px 20px for smaller, 16px 30px for larger */
-    /* Adjust font-size: e.g., 14px for smaller, 18px for larger */
   }
 
   .btn-primary::before, .btn-secondary::before {
     width: 18px;
     height: 18px;
-    /* Smaller icon size for mobile buttons */
-    /* Adjust size: e.g., 16px for smaller, 20px for larger */
   }
 }

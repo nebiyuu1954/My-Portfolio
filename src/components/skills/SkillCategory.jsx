@@ -1,22 +1,21 @@
 import './skills.css';
 
 const SkillCategory = ({ title, skills }) => {
-  // Define sub-skills for each skill
   const subSkills = {
-    'HTML5': ['Semantic HTML', 'Forms', 'Accessibility', 'Canvas'],
-    'CSS3': ['Flexbox', 'Grid', 'Animations', 'Transitions'],
-    'JavaScript': ['ES6', 'DOM', 'Async', 'Events'],
-    'React': ['Components', 'Hooks', 'State', 'Router'],
+    'HTML5': ['Semantic HTML', 'Form Creation', 'Accessibility', 'Image Embedding'],
+    'CSS3': ['Flexbox', 'Grid', 'Animations', 'Responsive Design Techniques'],
+    'JavaScript': ['ES6', 'DOM', 'Async', 'Events', 'OOP Principles'],
+    'React': ['Components', 'Hooks', 'State', 'Router', 'React testing'],
     'Responsive Design': ['Mobile-First', 'Media Queries', 'Fluid Layouts'],
     'Tailwind CSS': ['Utility-First', 'Responsive', 'Custom Components'],
     'UX/UI Design': ['Wireframing', 'Prototyping', 'User Research'],
-    'Python': ['OOP', 'Scripting', 'Data Analysis'],
-    'Django': ['MVC', 'ORM', 'Authentication'],
-    'REST APIs': ['RESTful Services', 'API Design'],
+    'Python': ['OOP', 'Scripting', 'Data Analysis', 'Data Scraping'],
+    'Django': ['MVC', 'ORM', 'DTL(Djnago Templating Language) ', 'Django Admin Panel'],
+    'REST APIs': ['RESTful Services', 'API Design', 'REST best Practices'],
     'MongoDB': ['NoSQL', 'Document Models'],
     'PostgreSQL': ['Relational DB', 'SQL Queries'],
     'SQL': ['Queries', 'Joins', 'Indexes'],
-    'Django REST Framework': ['API Development', 'Serializers'],
+    'Django REST Framework': ['API Development', 'Filtering', 'searching', 'ordering', 'pagination ', ' Throttling', 'Serializers'],
     'VS Code': ['Editing', 'Extensions', 'Debugging'],
     'Git': ['Version Control', 'Branching'],
     'GitHub': ['Repos', 'Pull Requests'],
@@ -24,7 +23,7 @@ const SkillCategory = ({ title, skills }) => {
     'Vite': ['Fast Build', 'HMR'],
     'Figma': ['UI Design', 'Prototyping'],
     'Postman': ['API Testing', 'Collections'],
-    'Insomnia': ['API Testing', 'GraphQL']
+    'Insomnia': ['API Testing', 'Collections']
   };
 
   return (

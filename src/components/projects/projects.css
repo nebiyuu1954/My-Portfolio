@@ -1,7 +1,8 @@
 .projects-section {
   padding: 100px 0 120px;
-  background-color: #ffffff;
+  background-color: #161616;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .projects-container {
@@ -49,7 +50,7 @@
 }
 
 .project-card {
-  background-color: #f9f9f9;
+  background-color: #0f0e0e;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -91,8 +92,8 @@
 }
 
 .tech-badge {
-  background-color: #ffffff;
-  color: #333333;
+  background-color: #161616;
+  color: #ffffff;
   font-size: 12px;
   font-weight: 200;
   padding: 6px 12px;
@@ -111,7 +112,7 @@
   margin: 0;
   padding: 0 10px;
   font-size: 16px;
-  color: #333333;
+  color: #ffffff;
   list-style: none;
 }
 
@@ -169,7 +170,7 @@
 }
 
 .code-button {
-  background-color: #ffffff;
+  background-color: #0f0e0e;
   color: #106919;
   border: 2px solid #106919;
 }
@@ -182,7 +183,7 @@
 
 .demo-button {
   background-color: #106919;
-  color: #ffffff;
+  color: #0f0e0e;
   border: 2px solid #106919;
 }
 
@@ -193,7 +194,7 @@
 }
 
 .doc-button {
-  background-color: #ffffff;
+  background-color: #0f0e0e;
   color: #106919;
   border: 2px solid #106919;
 }
@@ -224,8 +225,8 @@
   margin-top: 24px;
 }
 
-.nav-button {
-  background-color: #ffffff;
+.pnav-button {
+  background-color:#161616;
   color: #106919;
   border: 2px solid #106919;
   padding: 10px 20px;
@@ -236,23 +237,23 @@
   transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
 }
 
-.nav-button:hover {
+.pnav-button:hover {
   background-color: #106919;
   color: #ffffff;
   transform: scale(1.05);
 }
 
-.nav-button:disabled {
+.pnav-button:disabled {
   background-color: #cccccc;
   color: #666666;
   border-color: #cccccc;
   cursor: not-allowed;
 }
 
-.progress-indicator {
+.pprogress-indicator {
   font-size: 16px;
   font-weight: 500;
-  color: #333333;
+  color: #106919;
 }
 
 @keyframes slideInRight {
@@ -386,7 +387,7 @@
     height: 12px;
   }
 
-  .nav-button {
+  .pnav-button {
     padding: 8px 16px;
     font-size: 14px;
   }

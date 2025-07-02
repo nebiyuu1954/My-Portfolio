@@ -3,122 +3,66 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
+  background-color: rgba(22, 22, 22, 0.8); /* Semi-transparent dark for blur visibility */
+  backdrop-filter: blur(12px); /* Increased blur for effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
   border-bottom: 1px solid #e5e5e5;
   z-index: 1000;
-  /* Fixed header stays at top, with blur effect and border */
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .header-container {
-  max-width: 1200px;
+  max-width: 1350px; /* Matches landing, skills, footer */
   margin: 0 auto;
-  padding: 24px 24px;
+  padding: 24px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Centers content, sets padding, and uses flex for layout */
-  /* Adjust padding for header height: e.g., 30px 30px for more space */
 }
 
 .logo {
   font-size: clamp(20px, 2.5vw + 1rem, 36px);
   font-weight: 700;
-  color: #222222;
+  color: #ffffff;
   margin: 0;
-  /* Font size scales with viewport width */
-  /* clamp(min, preferred, max): min 20px, preferred 2.5vw + 1rem (~25px at 1000px, ~30px at 1920px), max 36px */
-  /* Adjust min (e.g., 18px for smaller), preferred (e.g., 2vw for slower scaling), max (e.g., 40px for larger) */
 }
 
 nav {
   display: flex;
   gap: 30px;
-  /* Horizontal layout with gap between links */
-  /* Adjust gap: e.g., 40px for more spacing, 20px for less */
 }
 
 nav a {
-  color: #333333;
+  color: #ffffff;
   text-decoration: none;
   font-size: clamp(14px, 1.8vw + 0.8rem, 24px);
   font-weight: 500;
   transition: color 0.3s ease;
-  /* Font size scales with viewport width, hover color transition */
-  /* clamp(min, preferred, max): min 14px, preferred 1.8vw + 0.8rem (~17px at 1000px, ~20px at 1920px), max 24px */
-  /* Adjust min (e.g., 12px), preferred (e.g., 1.5vw for slower), max (e.g., 28px) */
 }
 
 nav a:hover {
-  color: #106919;
-  /* Hover color for links */
-  /* Change color: e.g., #ff5733 for orange */
+  color: #106919; /* Matches landing, skills, footer */
 }
 
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 20px;
-    /* Stacks logo and nav vertically, reduces padding */
-    /* Adjust padding: e.g., 15px 15px for less space */
+    padding: 20px 12px;
   }
 
   nav {
     margin-top: 16px;
     flex-wrap: wrap;
-    gap: 13px;
-    /* Vertical layout with smaller gap */
-    /* Adjust gap: e.g., 10px for tighter, 20px for wider */
-    /* Adjust margin-top: e.g., 10px for less space */
+    gap: 12px;
   }
 
   .logo {
     font-size: clamp(18px, 2.5vw + 0.8rem, 28px);
-    /* Smaller scaling for mobile */
-    /* clamp: min 18px, preferred 2.5vw + 0.8rem (~20px at 500px), max 28px */
-    /* Adjust min (e.g., 16px), preferred (e.g., 2vw), max (e.g., 24px) */
   }
 
   nav a {
     font-size: clamp(13px, 1.8vw + 0.6rem, 20px);
-    /* Smaller scaling for mobile links */
-    /* clamp: min 13px, preferred 1.8vw + 0.6rem (~15px at 500px), max 20px */
-    /* Adjust min (e.g., 12px), preferred (e.g., 1.5vw), max (e.g., 18px) */
-  }
-}
-
-
-
-@media (max-width: 784px) {
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 20px;
-    /* Stacks logo and nav vertically, reduces padding */
-    /* Adjust padding: e.g., 15px 15px for less space */
-  }
-
-  nav {
-    margin-top: 16px;
-    flex-wrap: wrap;
-    gap: 13px;
-    /* Vertical layout with smaller gap */
-    /* Adjust gap: e.g., 10px for tighter, 20px for wider */
-    /* Adjust margin-top: e.g., 10px for less space */
-  }
-
-  .logo {
-    font-size: clamp(18px, 2.5vw + 0.8rem, 28px);
-    /* Smaller scaling for mobile */
-    /* clamp: min 18px, preferred 2.5vw + 0.8rem (~20px at 500px), max 28px */
-    /* Adjust min (e.g., 16px), preferred (e.g., 2vw), max (e.g., 24px) */
-  }
-
-  nav a {
-    font-size: clamp(13px, 1.8vw + 0.6rem, 20px);
-    /* Smaller scaling for mobile links */
-    /* clamp: min 13px, preferred 1.8vw + 0.6rem (~15px at 500px), max 20px */
-    /* Adjust min (e.g., 12px), preferred (e.g., 1.5vw), max (e.g., 18px) */
   }
 }

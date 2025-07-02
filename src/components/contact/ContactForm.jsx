@@ -1,8 +1,6 @@
 
-// Form Component
 const ContactForm = ({ formik }) => (
   <form className="contact-form" onSubmit={formik.handleSubmit}>
-    {/* Name Fields (Side by Side) */}
     <div className="form-group name-group">
       <div className="form-field">
         <input
@@ -33,7 +31,7 @@ const ContactForm = ({ formik }) => (
         ) : null}
       </div>
     </div>
-    {/* Email Field */}
+
     <div className="form-group">
       <input
         type="email"
@@ -48,7 +46,7 @@ const ContactForm = ({ formik }) => (
         <span className="error-message">{formik.errors.email}</span>
       ) : null}
     </div>
-    {/* Subject Field */}
+
     <div className="form-group">
       <input
         type="text"
@@ -63,7 +61,7 @@ const ContactForm = ({ formik }) => (
         <span className="error-message">{formik.errors.subject}</span>
       ) : null}
     </div>
-    {/* Message Field */}
+
     <div className="form-group">
       <textarea
         id="message"
@@ -78,7 +76,7 @@ const ContactForm = ({ formik }) => (
         <span className="error-message">{formik.errors.message}</span>
       ) : null}
     </div>
-    {/* Submit Button */}
+
     <button type="submit" className="contact-button submit-button">
       Submit Message
     </button>

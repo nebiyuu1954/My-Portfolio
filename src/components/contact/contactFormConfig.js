@@ -1,7 +1,7 @@
 import * as Yup from "yup";
 import emailjs from "@emailjs/browser";
 
-// Form Validation and Submission Config
+
 export const getFormConfig = () => ({
   initialValues: {
     firstName: "",
@@ -28,10 +28,10 @@ export const getFormConfig = () => ({
   onSubmit: (values, { resetForm }) => {
     emailjs
       .send(
-        "service_6bogm4i", // Replace with your EmailJS service ID
-        "template_8xsdgjq", // Replace with your EmailJS template ID
+        "service_6bogm4i", // EmailJS service ID
+        "template_8xsdgjq", // EmailJS template ID
         values,
-        "Bz_WQjFCldhtOMpOy" // Replace with your EmailJS public key
+        "Bz_WQjFCldhtOMpOy" //  EmailJS public key
       )
       .then(() => {
         alert("Message sent successfully!");

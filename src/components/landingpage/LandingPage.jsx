@@ -16,7 +16,7 @@ const LandingPage = () => {
     </span>
   ));
 
-  const message = "I'm a passionate web developer with a knack for creating dynamic and user-friendly websites. With expertise in modern JavaScript frameworks and responsive design, I strive to build seamless digital experiences that make an impact.";
+  const message = "I'm a passionate web developer with a knack for creating dynamic and user-friendly websites. With expertise in modern JavaScript frameworks like react with responsive design and backend of django, I strive to build seamless digital experiences that make an impact.";
   const messageWords = message.split(' ').map((word, index) => (
     <span key={`word-${index}`} className="word">
       {word}

@@ -1,12 +1,11 @@
-import React from 'react';
 import { useFormik } from 'formik';
 import { getFormConfig } from './contactFormConfig';
 import ContactForm from './ContactForm';
 import './contact.css';
 
-// Main Contact component
+
 const Contact = () => {
-  // Section Title with Wave Effect
+
   const title = 'Contact';
   const titleWithSpans = title.split('').map((char, index) => (
     <span key={index} className="letter" style={{ animationDelay: `${index * 0.2}s` }}>
@@ -14,16 +13,16 @@ const Contact = () => {
     </span>
   ));
 
-  // Form Configuration
+
   const formik = useFormik(getFormConfig());
 
   return (
     <section id="contact" className="contact-section">
       <div className="contact-container">
-        {/* Section Title */}
+
         <h2 className="contact-title">{titleWithSpans}</h2>
         <div className="contact-content">
-          {/* Left Content: Let's Work Together */}
+
           <div className="contact-left">
             <h3 className="contact-heading">Let's Work Together</h3>
             <p className="contact-message">
@@ -78,7 +77,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          {/* Right Content: Contact Form */}
+
           <div className="contact-right">
             <h3 className="contact-heading">Get in Touch</h3>
             <ContactForm formik={formik} />
