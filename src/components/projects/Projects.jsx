@@ -7,9 +7,9 @@ const Projects = () => {
     {
       title: 'Telegram Bot Developer (Django) ',
       techStack: ['Django', 'Python','Mongo DB', 'Chapa Api', 'Telegram Api'],
-      githubLink: 'https://github.com/yourusername/ecommerce',
-      liveDemoLink: 'https://ecommerce-demo.com',
-      documentationLink: 'https://github.com/yourusername/ecommerce/blob/main/README.md',
+      githubLink: 'https://github.com/nebiyuu1954',
+      liveDemoLink: ' ',
+      documentationLink: ' ',
       description: [
         'Implemented a Telegram Group Bot for Tigat website using Django that has group restrictions and rules for keeping Community Guidelines',
         `Implemented a Telegram Bot for Tigat website using Django that has payment integration with Chapa's Api for Community payment`,
@@ -21,8 +21,8 @@ const Projects = () => {
       title: 'Personal Portfolio Website',
       techStack: ['React', 'Vite', 'Javascript','Html','Css'],
       githubLink: 'https://github.com/nebiyuu1954/My-Portfolio',
-      liveDemoLink: 'https://taskmanager-demo.com',
-      documentationLink: 'https://github.com/yourusername/taskmanager/blob/main/docs.md',
+      liveDemoLink: 'https://nebiyu-esaiyas.vercel.app/',
+      documentationLink: 'https://github.com/nebiyuu1954/My-Portfolio/blob/main/README.md',
       description: [
         'Designed and Developed intuitive Responsive UI with React ',
         'Implemented Interactive Skills Slider',

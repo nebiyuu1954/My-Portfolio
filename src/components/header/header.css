@@ -21,7 +21,7 @@ header {
   align-items: center;
 }
 
-.logo {
+.hlogo {
   font-size: clamp(20px, 2.5vw + 1rem, 36px);
   font-weight: 700;
   color: #ffffff;
@@ -31,6 +31,7 @@ header {
 nav {
   display: flex;
   gap: 30px;
+  margin-top: 5px;
 }
 
 nav a {
@@ -44,8 +45,8 @@ nav a {
 nav a:hover {
   color: #106919; /* Matches landing, skills, footer */
 }
-
-@media (max-width: 768px) {
+/* 
+@media (max-width: 637px) {
   .header-container {
     flex-direction: column;
     align-items: flex-start;
@@ -66,3 +67,78 @@ nav a:hover {
     font-size: clamp(13px, 1.8vw + 0.6rem, 20px);
   }
 }
+
+
+
+@media (max-width: 668px) {
+  .header-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 12px;
+    margin-top: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-right: 20px;
+  }
+
+  .logo {
+    font-size: clamp(30px, 2.5vw + 0.8rem, 28px);
+  }
+
+  nav a {
+    font-size: clamp(23px, 1.8vw + 0.6rem, 40px);
+  }
+} */
+
+
+  @media (max-width: 550px) {
+    header
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 12px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hlogo {
+      font-size: clamp(18px, 2.5vw + 0.8rem, 28px);
+    }
+
+    nav a {
+      font-size: clamp(15px, 1.8vw + 0.6rem, 20px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 20px 12px;
+      margin-top: 20px;
+    }
+
+    nav {
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-right: 15px;
+    }
+
+    .logo {
+      font-size: clamp(24px, 2.5vw + 0.8rem, 28px);
+    }
+
+    nav a {
+      font-size: clamp(18px, 1.8vw + 0.6rem, 30px);
+    }
+  }

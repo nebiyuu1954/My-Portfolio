@@ -186,7 +186,7 @@
 
 @media (max-width: 768px) {
   .skills-section {
-    padding: 80px 0 100px;
+    padding: 120px 0 100px;
   }
 
   .skills-container {
@@ -205,6 +205,7 @@
 
   .skill-category {
     min-width: 0;
+    max-height: 13rem ;
   }
 
   .category-title {
