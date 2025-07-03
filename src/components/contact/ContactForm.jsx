@@ -1,7 +1,7 @@
 
 const ContactForm = ({ formik }) => (
   <form className="contact-form" onSubmit={formik.handleSubmit}>
-    <div className="form-group name-group">
+    <div id="form-group-name-group" className="form-group name-group">
       <div className="form-field">
         <input
           type="text"
