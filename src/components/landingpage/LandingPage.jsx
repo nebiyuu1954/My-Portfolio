@@ -35,6 +35,7 @@ const LandingPage = () => {
             <div className="landing-buttons">
               <a href="https://flowcv.com/resume/anje09f6ogep" target="_blank" className="btn btn-primary">View Resume</a>
               <a href="#contact" className="btn btn-secondary">Get in Touch</a>
+              <a href="https://nebiyuesaiyas.vercel.app/" target="_blank" className="btn btn-third" id="portfoliov2">My second portfolio is deployed check it out </a>
             </div>
           </div>
         </div>
