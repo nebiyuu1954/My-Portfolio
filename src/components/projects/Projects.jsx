@@ -5,33 +5,63 @@ import './projects.css';
 const Projects = () => {
   const projects = [
     {
-      title: 'Telegram Bot Developer (Django) ',
-      techStack: ['Django', 'Python','Mongo DB', 'Chapa Api', 'Telegram Api'],
-      githubLink: 'https://github.com/nebiyuu1954',
-      liveDemoLink: ' ',
-      documentationLink: ' ',
+      title: 'UNICEF-Supported Water Billing System',
+      techStack: ['C#', '.NET 8', 'Entity Framework Core', 'SQL Server', 'Angular 16', 'TypeScript', 'JWT', 'Swagger'],
+      githubLink: '',
+      liveDemoLink: '',
+      documentationLink: '',
       description: [
-        'Implemented a Telegram Group Bot for Tigat website using Django that has group restrictions and rules for keeping Community Guidelines',
-        `Implemented a Telegram Bot for Tigat website using Django that has payment integration with Chapa's Api for Community payment`,
-        'Implemented Web app in telegram for the user fetching html/css/js from our django server for succesful payement interface',
-        'Implemented the test clases for the classes'
+        'Developed a full-stack billing and customer management system for government water services.',
+        'Designed RESTful APIs with JWT authentication and role-based access control (RBAC).',
+        'Implemented automated bill calculation and PDF receipt generation.',
+        'Built Angular dashboards with charts for operational reporting.',
+        'Deployed and maintained the system on IIS with SSL configuration.'
+      ]
+    },
+    {
+      title: 'Temp AI Internship Matching Platform',
+      techStack: ['React', 'Vite', 'Tailwind CSS', 'Chart.js', 'Formik & Yup', 'Django', 'Django Rest Framework'],
+      githubLink: '',
+      liveDemoLink: '',
+      documentationLink: '',
+      description: [
+        'Led development of an AI-powered internship matching platform for Ethiopia with job seeker, employer, and admin roles.',
+        'Implemented automated resume scoring using OpenRouter APIs and rule-based matching logic.',
+        'Designed modular Django backend with role-based access control (RBAC).',
+        'Built responsive frontend with Tailwind CSS and integrated data visualizations.',
+        'Implemented JWT authentication and API documentation with Swagger.'
+      ]
+    },
+    {
+      title: 'Telegram Bot & Web App (Django)',
+      techStack: ['Django', 'Python', 'MongoDB', 'Chapa API', 'Telegram API'],
+      githubLink: 'https://github.com/nebiyuu1954',
+      liveDemoLink: '',
+      documentationLink: '',
+      description: [
+        'Developed a Django-based Telegram bot with group management, restrictions, and community guideline enforcement.',
+        'Integrated Chapa Payment Gateway API for secure community payments and subscription handling.',
+        'Built a Telegram Web App interface serving dynamic HTML/CSS/JS from Django for seamless payment processing.',
+        'Implemented webhook logic to synchronize payment status and automate user access.',
+        'Applied Python testing frameworks to validate bot functionality and backend services.'
       ]
     },
     {
       title: 'Personal Portfolio Website',
-      techStack: ['React', 'Vite', 'Javascript','Html','Css'],
+      techStack: ['React', 'Vite', 'JavaScript', 'HTML', 'CSS'],
       githubLink: 'https://github.com/nebiyuu1954/My-Portfolio',
       liveDemoLink: 'https://nebiyu-esaiyas.vercel.app/',
       documentationLink: 'https://github.com/nebiyuu1954/My-Portfolio/blob/main/README.md',
       description: [
-        'Designed and Developed intuitive Responsive UI with React ',
-        'Implemented Interactive Skills Slider',
-        'Integrated and Managed Assets',
-        'used formik and yup for validation used Email Js for submition',
-        'Deployed to Vercel',
+        'Designed and developed a responsive, intuitive UI using React and Vite.',
+        'Implemented interactive skills slider and multilingual support (English, Amharic, Spanish).',
+        'Integrated contact forms with Formik and Yup validation, connected via EmailJS.',
+        'Optimized asset management and applied theme switching (light/dark mode).',
+        'Deployed with CI/CD pipeline on Vercel for automated builds and updates.'
       ]
     }
   ];
+
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animationClass, setAnimationClass] = useState('');

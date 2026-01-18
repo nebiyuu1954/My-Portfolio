@@ -18,7 +18,9 @@ const Aboutme = () => {
     </span>
   ));
 
-  const message = "I'm a passionate web developer with a knack for creating dynamic and user-friendly websites. With expertise in modern JavaScript frameworks and responsive design, I strive to build seamless digital experiences that make an impact.";
+  const message = "I'm Nebiyu Esaiyas, a full-stack web developer passionate about building secure, scalable, and user‑friendly applications. With hands‑on experience in React, Django, Angular and .NET, I specialize in crafting dynamic solutions that blend strong backend architecture with engaging front‑end design. My goal is to deliver seamless digital experiences that empower organizations and users alike.";
+
+
   const messageWords = message.split(' ').map((word, index) => (
     <span key={`word-${index}`} className="word">
       {word}

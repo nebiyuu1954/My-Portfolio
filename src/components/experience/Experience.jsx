@@ -5,17 +5,18 @@ import './experience.css';
 const Experience = () => {
   const experiences = [
     {
-      role: 'Python Django Developer (Internship)',
-      company: 'Conquer Agency',
-      year: '04/2024 - 06/2024',
-      location: 'Remote',
-      responsibilities: [
-        'Collaborated to build Tigat website Telegrams community features like Group management and Bot payment using Django',
-        'Implemented payment integration with Chapas API',
-        'Web Scrapping using libraries such as Beautiful Soup lxml for data extraction and analysis',
-        'Tested python and telgram clases',
-        'Implemented webhooks for payment notification',
-      ]
+     role: 'Backend & Bot Developer (Internship)',
+     company: 'Conquer Agency',
+     year: '04/2024 – 07/2024',
+     location: 'Addis Ababa, Ethiopia',
+     responsibilities: [ 'Developed a Django-based Telegram bot for group management, payments, and access control.', 'Integrated Chapa Payment Gateway API for secure, real-time transactions and subscription handling.', 'Built a Telegram Web App interface with dynamic HTML/CSS/JS served from Django.', 'Implemented webhooks to synchronize payment status and automate user access.', 'Applied Python testing frameworks to validate bot logic and backend services.' ]
+    },
+    {
+      role: 'Full Stack Web Developer',
+      company: 'DAFTech Social ICT Solutions',
+      year: '08/2025 – 02/2026',
+      location: 'Addis Ababa, Ethiopia',
+      responsibilities: [ 'Built internal production web applications using .NET 8 and Angular, deployed on IIS with SSL.', 'Designed relational database schemas with SQL Server and Entity Framework Core.', 'Exposed scalable RESTful APIs with JWT authentication and role-based access control (RBAC).', 'Configured IIS application pools and SSL certificates to ensure high availability.', 'Developed UNICEF-supported government water billing system (Wuha Limat Billing Software).' ]
     },
     {
       role: 'Recent Graduate',
